@@ -3,7 +3,7 @@
 #All rights reserved 
 
 #>> We use While toop to keep asking integers from the user.
-#>> We also use Try Excelpt block to prevent the user to enter invalid input.
+#>> We also use Try-Except block to prevent the user to enter invalid input.
 #>> Inside the loop, We use If statement to cassify the integer given by the user.
 
 #The head
@@ -12,19 +12,19 @@ print("THE EVEN-ODD IDENTIFIER\nInput q to quit\n-----------------------")
 #While loop to keep asking
 while True:
     try:
-        x = input("Give me the number: ")
+        x = input("Give me the number: ") 
         if x == "q":
-            quit()
+            quit() #'q' terminates the program
         elif x == "":
-            print("Looks like empty input!")
+            print("Looks like empty input!") #identify empty input
         elif x == " ":
-            print("That was space, not a number!")
+            print("That was space, not a number!") #identify space
         elif int(x) == 0:
-            print("Invalid Input!")
+            print("Invalid Input!") #identify 0
         elif int(x)%2 == 0:
-            print("That was an even number pal!")
+            print("That was an even number pal!") #identify even numbers
         elif int(x)%2 == 1:
-            print("That was an odd number pal!")
+            print("That was an odd number pal!") #identify odd numbers
     except:
-        print("I don't know what that was!")
+        print("I don't know what that was!") #for other unknown inputs
         
