@@ -2,7 +2,7 @@
 #This is the code for Q1 in activity 4 of python workshop @ OUSL
 #All rights reserved 
 
-#>> We use While toop to keep asking integers from the user.
+#>> We use while toop to keep asking integers from the user.
 #>> We also use Try-Except block to prevent the user to enter invalid input.
 #>> Inside the loop, We use If statement to cassify the integer given by the user.
 
