@@ -4,7 +4,7 @@
 
 #>> We use while toop to keep asking integers from the user.
 #>> We also use Try-Except block to prevent the user to enter invalid input.
-#>> Inside the loop, We use If statement to cassify the integer given by the user.
+#>> Inside the loop, We use If statement to classify the integer given by the user.
 
 #The head
 print("THE EVEN-ODD IDENTIFIER\nInput q to quit\n-----------------------")
