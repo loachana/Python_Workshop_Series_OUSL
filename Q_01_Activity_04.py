@@ -14,7 +14,7 @@ while True:
     try:
         x = input("Give me the number: ") 
         if x == "q":
-            quit() #'q' terminates the program
+            break #'q' breaks the program
         elif x == "":
             print("Looks like empty input!") #identify empty input
         elif x == " ":

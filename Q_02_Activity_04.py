@@ -13,8 +13,6 @@ print("THE THREE FIVE FACTOR IDENTIFIER\nInput 0 to stop\n----------------------
 while True:
     try:
         x = input("Give me the number: ") 
-
-        
         if x == "":
             print("Looks like empty input!") #identify empty input
         elif x == " ":
