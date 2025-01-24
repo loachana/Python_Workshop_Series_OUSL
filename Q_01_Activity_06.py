@@ -7,7 +7,7 @@ def summing_machine(num1, num2): #Take two arguments as num1, num2
     
     The_output = num1 + num2 #Summing process
     
-    return(The_output) #returns the sum
+    return The_output #returns the sum
 
 #Testing
 print(f"The sum of 42352525 and 23524334 are: {summing_machine(42352525,23524334)}\n")
