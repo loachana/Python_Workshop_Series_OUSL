@@ -92,8 +92,11 @@ def clear_button():
     global r
     global user_input1
     global the_sum
+    global the_plus
     global adder
     global minor
+    global secondnumber
+    global user_input2
     
     entry1.delete(0, 'end')
 
@@ -104,7 +107,10 @@ def clear_button():
     minor = 0
     the_plus = 0
 
+    secondnumber = 0
+
     user_input1 = ''
+    user_input2 = ''
 
 #-------------------------------------------------------------
 def equals_button():
