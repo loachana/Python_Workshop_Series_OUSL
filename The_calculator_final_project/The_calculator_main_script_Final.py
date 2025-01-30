@@ -3,8 +3,13 @@
 #All Rights Reserved!
 #This codebase is fully open-source and all suggestions are welcome.
 
+
+#THE SIMPLE CALCULATOR is a very basic arithmatic calculator.
+#It can handle main four operations with limitations.
+
 #Importing Libraries
 import tkinter as tk
+from tkinter import messagebox
 
 #Defining global variables
 input_1_p = 0
@@ -230,8 +235,16 @@ def dot_button():
 def clear_entry_button():
     entry1.delete(0, 'end')
 #------------------------------------------------------
+#About button command function
+def about_button():
+    messagebox.showinfo("About","""THE SIMPLE CALCULATOR is an open-sourse project.
+It is full functioned calculator powered by python language and its built in functions.
+Thank you for your interest.
 
+                    © 2025 Lochana Egodawele""")
+#------------------------------------------------------
 
+    
 root = tk.Tk()
 root.title("The Simple Calculator")
 root.geometry("500x500")
@@ -324,6 +337,10 @@ button_dot.place(x=225, y=411)
 #Crear entry button definitions
 button_clear_entry = tk.Button(root, text=" CE ", command=clear_entry_button, font=("Arial", 30), height=1, width=3)
 button_clear_entry.place(x=312, y=225)
+
+#About button definitions
+button_clear_entry = tk.Button(root, text="About", command=about_button, font=("Arial", 10), height=1, width=4)
+button_clear_entry.place(x=452, y=5)
 
 #-------------------------------------------------------------------------------------------------------------------
 #Calling mainloop
