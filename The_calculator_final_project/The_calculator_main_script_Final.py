@@ -238,7 +238,7 @@ def clear_entry_button():
 #About button command function
 def about_button():
     messagebox.showinfo("About","""THE SIMPLE CALCULATOR is an open-sourse project.
-It is full functioned calculator powered by python language and its built in functions.
+It is fully functioned calculator powered by python language and its built in functions.
 Thank you for your interest.
 
                     © 2025 Lochana Egodawele""")
