@@ -85,7 +85,7 @@ def equals_button():
     global the_div
     global the_mult
     global input_2
-    
+
 
     try:
         input_2 = float(entry1.get())
