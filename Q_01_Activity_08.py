@@ -7,5 +7,5 @@ numbers = [1,2,3]
 
 try:
     print(numbers[3])
-except:
+except IndexError:
     print("numbers[3] is out of range")
