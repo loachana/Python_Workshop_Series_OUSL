@@ -4,8 +4,8 @@
 import tkinter as tk
 from tkinter import messagebox
 
-r=1
-
+r = 0
+                
 root = tk.Tk()
 root.title("Tic Tac Toe")
 root.geometry("450x500")
@@ -45,17 +45,104 @@ x_123x3 = 0
 x_pri_diagonal = 0
 x_sec_diagonal = 0
 
+'''
+
+global o_1x123
+global o_2x123
+global o_3x123
+global o_123x1
+global o_123x2
+global o_123x3
+global o_pri_diagonal
+global o_sec_diagonal
+
+global x_1x123
+global x_2x123
+global x_3x123
+global x_123x1
+global x_123x2
+global x_123x3
+global x_pri_diagonal
+global x_sec_diagonal
+
+'''
+
+def ResetBomb():
+    global r
+    
+    global o_1x123
+    global o_2x123
+    global o_3x123
+    global o_123x1
+    global o_123x2
+    global o_123x3
+    global o_pri_diagonal
+    global o_sec_diagonal
+
+    global x_1x123
+    global x_2x123
+    global x_3x123
+    global x_123x1
+    global x_123x2
+    global x_123x3
+    global x_pri_diagonal
+    global x_sec_diagonal
 
 
+    
+    button_1.config(bg="#f0f0f0", state=tk.NORMAL, text="")
+    button_2.config(bg="#f0f0f0", state=tk.NORMAL, text="")
+    button_3.config(bg="#f0f0f0", state=tk.NORMAL, text="")
+
+    button_4.config(bg="#f0f0f0", state=tk.NORMAL, text="")
+    button_5.config(bg="#f0f0f0", state=tk.NORMAL, text="")
+    button_6.config(bg="#f0f0f0", state=tk.NORMAL, text="")
+    button_7.config(bg="#f0f0f0", state=tk.NORMAL, text="")
+    button_8.config(bg="#f0f0f0", state=tk.NORMAL, text="")
+    button_9.config(bg="#f0f0f0", state=tk.NORMAL, text="")
+
+    o_1x123 = 0
+    o_2x123 = 0
+    o_3x123 = 0
+    o_123x1 = 0
+    o_123x2 = 0
+    o_123x3 = 0
+    o_pri_diagonal = 0
+    o_sec_diagonal = 0
+
+    x_1x123 = 0
+    x_2x123 = 0
+    x_3x123 = 0
+    x_123x1 = 0
+    x_123x2 = 0
+    x_123x3 = 0
+    x_pri_diagonal = 0
+    x_sec_diagonal = 0
+
+    r = 0
+
+    
 def button_1_c():
     global r
     global _1x1
+    
     global o_1x123
+    global o_2x123
+    global o_3x123
     global o_123x1
+    global o_123x2
+    global o_123x3
     global o_pri_diagonal
+    global o_sec_diagonal
+
     global x_1x123
+    global x_2x123
+    global x_3x123
     global x_123x1
+    global x_123x2
+    global x_123x3
     global x_pri_diagonal
+    global x_sec_diagonal
     
     
     if r%2 == 0:
@@ -70,19 +157,26 @@ def button_1_c():
             button_1.config(bg="#FFD580")
             button_2.config(bg="#FFD580")
             button_3.config(bg="#FFD580")
-            print("x win")
+            
+            messagebox.showinfo("Congratulations!", "Player 1 wins!")
 
+            ResetBomb()
+    
         elif x_123x1 == 3:
             button_1.config(bg="#FFD580")
             button_4.config(bg="#FFD580")
             button_7.config(bg="#FFD580")
-            print("x win")
+            messagebox.showinfo("Congratulations!", "Player 1 wins!")
+
+            ResetBomb()
 
         elif x_pri_diagonal == 3:
             button_1.config(bg="#FFD580")
             button_5.config(bg="#FFD580")
             button_9.config(bg="#FFD580")
-            print("x win")
+            messagebox.showinfo("Congratulations!", "Player 1 wins!")
+
+            ResetBomb()
 
         
     elif r%2 == 1:
@@ -129,10 +223,24 @@ def button_1_c():
 def button_2_c():
     global r
     global _1x2
+
     global o_1x123
+    global o_2x123
+    global o_3x123
+    global o_123x1
     global o_123x2
+    global o_123x3
+    global o_pri_diagonal
+    global o_sec_diagonal
+
     global x_1x123
+    global x_2x123
+    global x_3x123
+    global x_123x1
     global x_123x2
+    global x_123x3
+    global x_pri_diagonal
+    global x_sec_diagonal
     
     if r%2 == 0:
         button_2.config(text="X")
@@ -185,11 +293,23 @@ def button_2_c():
 def button_3_c():
     global r
     global _1x3
+
     global o_1x123
+    global o_2x123
+    global o_3x123
+    global o_123x1
+    global o_123x2
     global o_123x3
+    global o_pri_diagonal
     global o_sec_diagonal
+
     global x_1x123
+    global x_2x123
+    global x_3x123
+    global x_123x1
+    global x_123x2
     global x_123x3
+    global x_pri_diagonal
     global x_sec_diagonal
     
     if r%2 == 0:
@@ -260,10 +380,24 @@ def button_3_c():
 def button_4_c():
     global r
     global _2x1
+
+    global o_1x123
     global o_2x123
+    global o_3x123
     global o_123x1
+    global o_123x2
+    global o_123x3
+    global o_pri_diagonal
+    global o_sec_diagonal
+
+    global x_1x123
     global x_2x123
+    global x_3x123
     global x_123x1
+    global x_123x2
+    global x_123x3
+    global x_pri_diagonal
+    global x_sec_diagonal
 
 
     if r%2 == 0:
@@ -320,12 +454,22 @@ def button_4_c():
 def button_5_c():
     global r
     global _2x2
+
+    global o_1x123
     global o_2x123
+    global o_3x123
+    global o_123x1
     global o_123x2
+    global o_123x3
     global o_pri_diagonal
     global o_sec_diagonal
+
+    global x_1x123
     global x_2x123
+    global x_3x123
+    global x_123x1
     global x_123x2
+    global x_123x3
     global x_pri_diagonal
     global x_sec_diagonal
 
@@ -417,10 +561,24 @@ def button_5_c():
 def button_6_c():
     global r
     global _2x3
+
+    global o_1x123
     global o_2x123
+    global o_3x123
+    global o_123x1
+    global o_123x2
     global o_123x3
+    global o_pri_diagonal
+    global o_sec_diagonal
+
+    global x_1x123
     global x_2x123
+    global x_3x123
+    global x_123x1
+    global x_123x2
     global x_123x3
+    global x_pri_diagonal
+    global x_sec_diagonal
 
     if r%2 == 0:
         button_6.config(text="X")
@@ -475,11 +633,23 @@ def button_6_c():
 def button_7_c():
     global r
     global _3x1
+
+    global o_1x123
+    global o_2x123
     global o_3x123
     global o_123x1
+    global o_123x2
+    global o_123x3
+    global o_pri_diagonal
     global o_sec_diagonal
+
+    global x_1x123
+    global x_2x123
     global x_3x123
     global x_123x1
+    global x_123x2
+    global x_123x3
+    global x_pri_diagonal
     global x_sec_diagonal
 
     
@@ -552,10 +722,24 @@ def button_7_c():
 def button_8_c():
     global r
     global _3x2
+
+    global o_1x123
+    global o_2x123
     global o_3x123
+    global o_123x1
     global o_123x2
+    global o_123x3
+    global o_pri_diagonal
+    global o_sec_diagonal
+
+    global x_1x123
+    global x_2x123
     global x_3x123
+    global x_123x1
     global x_123x2
+    global x_123x3
+    global x_pri_diagonal
+    global x_sec_diagonal
 
 
     
@@ -613,12 +797,24 @@ def button_8_c():
 def button_9_c():
     global r
     global _3x3
+
+    global o_1x123
+    global o_2x123
     global o_3x123
+    global o_123x1
+    global o_123x2
     global o_123x3
     global o_pri_diagonal
+    global o_sec_diagonal
+
+    global x_1x123
+    global x_2x123
     global x_3x123
+    global x_123x1
+    global x_123x2
     global x_123x3
     global x_pri_diagonal
+    global x_sec_diagonal
 
     
     if r%2 == 0:
