@@ -61,17 +61,29 @@ def button_1_c():
     if r%2 == 0:
         button_1.config(text="X")
         button_1.config(state=tk.DISABLED)
-
+        
         x_1x123 = x_1x123 + _1x1
         x_123x1 = x_123x1 + _1x1
         x_pri_diagonal = x_pri_diagonal + _1x1
 
         if x_1x123 == 3:
+            button_1.config(bg="#FFD580")
+            button_2.config(bg="#FFD580")
+            button_3.config(bg="#FFD580")
             print("x win")
+
         elif x_123x1 == 3:
+            button_1.config(bg="#FFD580")
+            button_4.config(bg="#FFD580")
+            button_7.config(bg="#FFD580")
             print("x win")
+
         elif x_pri_diagonal == 3:
+            button_1.config(bg="#FFD580")
+            button_5.config(bg="#FFD580")
+            button_9.config(bg="#FFD580")
             print("x win")
+
         
     elif r%2 == 1:
         button_1.config(text="O")
@@ -82,10 +94,19 @@ def button_1_c():
         o_pri_diagonal = o_pri_diagonal + _1x1
 
         if o_1x123 == 3:
+            button_1.config(bg="#90EE90")
+            button_2.config(bg="#90EE90")
+            button_3.config(bg="#90EE90")
             print("o win")
         elif o_123x1 == 3:
+            button_1.config(bg="#90EE90")
+            button_4.config(bg="#90EE90")
+            button_7.config(bg="#90EE90")
             print("o win")
         elif o_pri_diagonal == 3:
+            button_1.config(bg="#90EE90")
+            button_5.config(bg="#90EE90")
+            button_9.config(bg="#90EE90")
             print("o win")
         
     r = r + 1
@@ -121,8 +142,14 @@ def button_2_c():
         x_123x2 = x_123x2 + _1x2
 
         if x_1x123 == 3:
+            button_1.config(bg="#FFD580")
+            button_2.config(bg="#FFD580")
+            button_3.config(bg="#FFD580")
             print("x win")
         elif x_123x2 == 3:
+            button_2.config(bg="#FFD580")
+            button_5.config(bg="#FFD580")
+            button_8.config(bg="#FFD580")
             print("x win")
             
     elif r%2 == 1:
@@ -133,8 +160,14 @@ def button_2_c():
         o_123x2 = o_123x2 + _1x2
 
         if o_1x123 == 3:
+            button_1.config(bg="#90EE90")
+            button_2.config(bg="#90EE90")
+            button_3.config(bg="#90EE90")
             print("o win")
         elif o_123x2 == 3:
+            button_2.config(bg="#90EE90")
+            button_5.config(bg="#90EE90")
+            button_8.config(bg="#90EE90")
             print("o win")
             
     r = r + 1
@@ -168,10 +201,19 @@ def button_3_c():
         x_sec_diagonal = x_sec_diagonal + _1x3
 
         if x_1x123 == 3:
+            button_1.config(bg="#FFD580")
+            button_2.config(bg="#FFD580")
+            button_3.config(bg="#FFD580")
             print("x win")
         elif x_123x3 == 3:
+            button_3.config(bg="#FFD580")
+            button_6.config(bg="#FFD580")
+            button_9.config(bg="#FFD580")
             print("x win")
         elif x_sec_diagonal == 3:
+            button_3.config(bg="#FFD580")
+            button_5.config(bg="#FFD580")
+            button_7.config(bg="#FFD580")
             print("x win")
 
         
@@ -184,10 +226,19 @@ def button_3_c():
         o_sec_diagonal = o_sec_diagonal + _1x3
 
         if o_1x123 == 3:
+            button_1.config(bg="#90EE90")
+            button_2.config(bg="#90EE90")
+            button_3.config(bg="#90EE90")
             print("o win")
         elif o_123x3 == 3:
+            button_3.config(bg="#90EE90")
+            button_6.config(bg="#90EE90")
+            button_9.config(bg="#90EE90")
             print("o win")
         elif o_sec_diagonal == 3:
+            button_3.config(bg="#90EE90")
+            button_5.config(bg="#90EE90")
+            button_7.config(bg="#90EE90")
             print("o win")
                   
     r = r + 1
@@ -223,8 +274,14 @@ def button_4_c():
         x_123x1 = x_123x1 + _2x1
 
         if x_2x123 == 3:
+            button_4.config(bg="#FFD580")
+            button_5.config(bg="#FFD580")
+            button_6.config(bg="#FFD580")
             print("x win")
         elif x_123x1 == 3:
+            button_1.config(bg="#FFD580")
+            button_4.config(bg="#FFD580")
+            button_7.config(bg="#FFD580")
             print("x win")
 
 
@@ -236,8 +293,14 @@ def button_4_c():
         o_123x1 = o_123x1 + _2x1
 
         if o_2x123 == 3:
+            button_4.config(bg="#90EE90")
+            button_5.config(bg="#90EE90")
+            button_6.config(bg="#90EE90")
             print("o win")
         elif o_123x1 == 3:
+            button_1.config(bg="#90EE90")
+            button_4.config(bg="#90EE90")
+            button_7.config(bg="#90EE90")
             print("o win")
 
             
@@ -278,12 +341,24 @@ def button_5_c():
 
 
         if x_2x123 == 3:
+            button_4.config(bg="#FFD580")
+            button_5.config(bg="#FFD580")
+            button_6.config(bg="#FFD580")
             print("x win")
         elif x_123x2 == 3:
+            button_2.config(bg="#FFD580")
+            button_5.config(bg="#FFD580")
+            button_8.config(bg="#FFD580")
             print("x win")
         elif x_pri_diagonal == 3:
+            button_1.config(bg="#FFD580")
+            button_5.config(bg="#FFD580")
+            button_9.config(bg="#FFD580")
             print("x win")
         elif x_sec_diagonal == 3:
+            button_3.config(bg="#FFD580")
+            button_5.config(bg="#FFD580")
+            button_7.config(bg="#FFD580")
             print("x win")
 
         
@@ -298,12 +373,24 @@ def button_5_c():
 
 
         if o_2x123 == 3:
+            button_4.config(bg="#90EE90")
+            button_5.config(bg="#90EE90")
+            button_6.config(bg="#90EE90")
             print("o win")
         elif o_123x2 == 3:
+            button_2.config(bg="#90EE90")
+            button_5.config(bg="#90EE90")
+            button_8.config(bg="#90EE90")
             print("o win")
         elif o_pri_diagonal == 3:
+            button_1.config(bg="#90EE90")
+            button_5.config(bg="#90EE90")
+            button_9.config(bg="#90EE90")
             print("o win")
         elif o_sec_diagonal == 3:
+            button_3.config(bg="#90EE90")
+            button_5.config(bg="#90EE90")
+            button_7.config(bg="#90EE90")
             print("o win")
 
         
@@ -343,11 +430,16 @@ def button_6_c():
         x_123x3 = x_123x3 + _2x3
 
         if x_2x123 == 3:
+            button_4.config(bg="#FFD580")
+            button_5.config(bg="#FFD580")
+            button_6.config(bg="#FFD580")
             print("x win")
         elif x_123x3 == 3:
+            button_3.config(bg="#FFD580")
+            button_6.config(bg="#FFD580")
+            button_9.config(bg="#FFD580")
             print("x win")
-
-        
+            
     elif r%2 == 1:
         button_6.config(text="O")
         button_6.config(state=tk.DISABLED)
@@ -356,8 +448,14 @@ def button_6_c():
         o_123x3 = o_123x3 + _2x3
 
         if o_2x123 == 3:
+            button_4.config(bg="#90EE90")
+            button_5.config(bg="#90EE90")
+            button_6.config(bg="#90EE90")
             print("o win")
         elif o_123x3 == 3:
+            button_3.config(bg="#90EE90")
+            button_6.config(bg="#90EE90")
+            button_9.config(bg="#90EE90")
             print("o win")
 
             
@@ -394,10 +492,19 @@ def button_7_c():
         x_sec_diagonal = x_sec_diagonal + _3x1
             
         if x_3x123 == 3:
+            button_7.config(bg="#FFD580")
+            button_8.config(bg="#FFD580")
+            button_9.config(bg="#FFD580")
             print("x win")
         elif x_123x1 == 3:
+            button_1.config(bg="#FFD580")
+            button_4.config(bg="#FFD580")
+            button_7.config(bg="#FFD580")
             print("x win")
         elif x_sec_diagonal == 3:
+            button_3.config(bg="#FFD580")
+            button_5.config(bg="#FFD580")
+            button_7.config(bg="#FFD580")
             print("x win")
 
 
@@ -410,10 +517,19 @@ def button_7_c():
         o_sec_diagonal = o_sec_diagonal + _3x1
             
         if o_3x123 == 3:
+            button_7.config(bg="#90EE90")
+            button_8.config(bg="#90EE90")
+            button_9.config(bg="#90EE90")
             print("o win")
         elif o_123x1 == 3:
+            button_1.config(bg="#90EE90")
+            button_4.config(bg="#90EE90")
+            button_7.config(bg="#90EE90")
             print("o win")
         elif o_sec_diagonal == 3:
+            button_3.config(bg="#90EE90")
+            button_5.config(bg="#90EE90")
+            button_7.config(bg="#90EE90")
             print("o win")
 
             
@@ -451,8 +567,14 @@ def button_8_c():
         x_123x2 = x_123x2 + _3x2
 
         if x_3x123 == 3:
+            button_7.config(bg="#FFD580")
+            button_8.config(bg="#FFD580")
+            button_9.config(bg="#FFD580")
             print("x win")
         elif x_123x2 == 3:
+            button_2.config(bg="#FFD580")
+            button_5.config(bg="#FFD580")
+            button_8.config(bg="#FFD580")
             print("x win")
     
         
@@ -464,8 +586,14 @@ def button_8_c():
         o_123x2 = o_123x2 + _3x2
 
         if o_3x123 == 3:
+            button_7.config(bg="#90EE90")
+            button_8.config(bg="#90EE90")
+            button_9.config(bg="#90EE90")
             print("o win")
         elif o_123x2 == 3:
+            button_2.config(bg="#90EE90")
+            button_5.config(bg="#90EE90")
+            button_8.config(bg="#90EE90")
             print("o win")
 
             
@@ -502,10 +630,19 @@ def button_9_c():
         x_pri_diagonal = x_pri_diagonal + _3x3
 
         if x_3x123 == 3:
+            button_7.config(bg="#FFD580")
+            button_8.config(bg="#FFD580")
+            button_9.config(bg="#FFD580")
             print("x win")
         elif x_123x3 == 3:
+            button_3.config(bg="#FFD580")
+            button_6.config(bg="#FFD580")
+            button_9.config(bg="#FFD580")
             print("x win")
         elif x_pri_diagonal == 3:
+            button_1.config(bg="#FFD580")
+            button_5.config(bg="#FFD580")
+            button_9.config(bg="#FFD580")
             print("x win")
 
 
@@ -518,10 +655,19 @@ def button_9_c():
         o_pri_diagonal = o_pri_diagonal + _3x3
 
         if o_3x123 == 3:
+            button_7.config(bg="#90EE90")
+            button_8.config(bg="#90EE90")
+            button_9.config(bg="#90EE90")
             print("o win")
         elif o_123x3 == 3:
+            button_3.config(bg="#90EE90")
+            button_6.config(bg="#90EE90")
+            button_9.config(bg="#90EE90")
             print("o win")
         elif o_pri_diagonal == 3:
+            button_1.config(bg="#90EE90")
+            button_5.config(bg="#90EE90")
+            button_9.config(bg="#90EE90")
             print("o win")
 
 
