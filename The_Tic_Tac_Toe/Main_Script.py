@@ -161,6 +161,8 @@ def button_1_c():
             messagebox.showinfo("Congratulations!", "Player 1 wins!")
 
             ResetBomb()
+
+            print(r)
     
         elif x_123x1 == 3:
             button_1.config(bg="#FFD580")
@@ -241,6 +243,7 @@ def button_2_c():
     global x_123x3
     global x_pri_diagonal
     global x_sec_diagonal
+
     
     if r%2 == 0:
         button_2.config(text="X")
