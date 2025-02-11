@@ -153,6 +153,8 @@ def button_1_c():
         x_123x1 = x_123x1 + _1x1
         x_pri_diagonal = x_pri_diagonal + _1x1
 
+        r = r + 1
+
         if x_1x123 == 3:
             button_1.config(bg="#FFD580")
             button_2.config(bg="#FFD580")
@@ -162,12 +164,12 @@ def button_1_c():
 
             ResetBomb()
 
-            print(r)
     
         elif x_123x1 == 3:
             button_1.config(bg="#FFD580")
             button_4.config(bg="#FFD580")
             button_7.config(bg="#FFD580")
+
             messagebox.showinfo("Congratulations!", "Player 1 wins!")
 
             ResetBomb()
@@ -176,6 +178,7 @@ def button_1_c():
             button_1.config(bg="#FFD580")
             button_5.config(bg="#FFD580")
             button_9.config(bg="#FFD580")
+
             messagebox.showinfo("Congratulations!", "Player 1 wins!")
 
             ResetBomb()
@@ -189,23 +192,36 @@ def button_1_c():
         o_123x1 = o_123x1 + _1x1
         o_pri_diagonal = o_pri_diagonal + _1x1
 
+        r = r + 1
+
         if o_1x123 == 3:
             button_1.config(bg="#90EE90")
             button_2.config(bg="#90EE90")
             button_3.config(bg="#90EE90")
-            print("o win")
+
+            messagebox.showinfo("Congratulations!", "Player 2 wins!")
+
+            ResetBomb()
+            
         elif o_123x1 == 3:
             button_1.config(bg="#90EE90")
             button_4.config(bg="#90EE90")
             button_7.config(bg="#90EE90")
-            print("o win")
+
+            messagebox.showinfo("Congratulations!", "Player 2 wins!")
+
+            ResetBomb()
+            
         elif o_pri_diagonal == 3:
             button_1.config(bg="#90EE90")
             button_5.config(bg="#90EE90")
             button_9.config(bg="#90EE90")
-            print("o win")
+
+            messagebox.showinfo("Congratulations!", "Player 2 wins!")
+
+            ResetBomb()
         
-    r = r + 1
+    
 
 '''
     _1x123 = _1x123 + _1x1
@@ -252,16 +268,25 @@ def button_2_c():
         x_1x123 = x_1x123 + _1x2
         x_123x2 = x_123x2 + _1x2
 
+        r = r + 1
+
         if x_1x123 == 3:
             button_1.config(bg="#FFD580")
             button_2.config(bg="#FFD580")
             button_3.config(bg="#FFD580")
-            print("x win")
+
+            messagebox.showinfo("Congratulations!", "Player 1 wins!")
+
+            ResetBomb()
+            
         elif x_123x2 == 3:
             button_2.config(bg="#FFD580")
             button_5.config(bg="#FFD580")
             button_8.config(bg="#FFD580")
-            print("x win")
+
+            messagebox.showinfo("Congratulations!", "Player 1 wins!")
+
+            ResetBomb()
             
     elif r%2 == 1:
         button_2.config(text="O")
@@ -270,18 +295,26 @@ def button_2_c():
         o_1x123 = o_1x123 + _1x2
         o_123x2 = o_123x2 + _1x2
 
+        r = r + 1
+
         if o_1x123 == 3:
             button_1.config(bg="#90EE90")
             button_2.config(bg="#90EE90")
             button_3.config(bg="#90EE90")
-            print("o win")
+
+            messagebox.showinfo("Congratulations!", "Player 2 wins!")
+
+            ResetBomb()
+            
         elif o_123x2 == 3:
             button_2.config(bg="#90EE90")
             button_5.config(bg="#90EE90")
             button_8.config(bg="#90EE90")
-            print("o win")
+
+            messagebox.showinfo("Congratulations!", "Player 2 wins!")
+
+            ResetBomb()
             
-    r = r + 1
 '''
     _1x123 = _1x123 + _1x2
     _123x2 = _123x2 + _1x2
@@ -323,21 +356,34 @@ def button_3_c():
         x_123x3 = x_123x3 + _1x3
         x_sec_diagonal = x_sec_diagonal + _1x3
 
+        r = r + 1
+
         if x_1x123 == 3:
             button_1.config(bg="#FFD580")
             button_2.config(bg="#FFD580")
             button_3.config(bg="#FFD580")
-            print("x win")
+
+            messagebox.showinfo("Congratulations!", "Player 1 wins!")
+
+            ResetBomb()
+            
         elif x_123x3 == 3:
             button_3.config(bg="#FFD580")
             button_6.config(bg="#FFD580")
             button_9.config(bg="#FFD580")
-            print("x win")
+
+            messagebox.showinfo("Congratulations!", "Player 1 wins!")
+
+            ResetBomb()
+            
         elif x_sec_diagonal == 3:
             button_3.config(bg="#FFD580")
             button_5.config(bg="#FFD580")
             button_7.config(bg="#FFD580")
-            print("x win")
+
+            messagebox.showinfo("Congratulations!", "Player 1 wins!")
+
+            ResetBomb()
 
         
     elif r%2 == 1:
@@ -348,23 +394,34 @@ def button_3_c():
         o_123x3 = o_123x3 + _1x3
         o_sec_diagonal = o_sec_diagonal + _1x3
 
+        r = r + 1
+
         if o_1x123 == 3:
             button_1.config(bg="#90EE90")
             button_2.config(bg="#90EE90")
             button_3.config(bg="#90EE90")
-            print("o win")
+
+            messagebox.showinfo("Congratulations!", "Player 2 wins!")
+
+            ResetBomb()
+            
         elif o_123x3 == 3:
             button_3.config(bg="#90EE90")
             button_6.config(bg="#90EE90")
             button_9.config(bg="#90EE90")
-            print("o win")
+
+            messagebox.showinfo("Congratulations!", "Player 2 wins!")
+
+            ResetBomb()
+            
         elif o_sec_diagonal == 3:
             button_3.config(bg="#90EE90")
             button_5.config(bg="#90EE90")
             button_7.config(bg="#90EE90")
-            print("o win")
-                  
-    r = r + 1
+
+            messagebox.showinfo("Congratulations!", "Player 2 wins!")
+
+            ResetBomb()
 
 '''
     _1x123 = _1x123 + _1x3
@@ -410,16 +467,25 @@ def button_4_c():
         x_2x123 = x_2x123 + _2x1
         x_123x1 = x_123x1 + _2x1
 
+        r = r + 1
+
         if x_2x123 == 3:
             button_4.config(bg="#FFD580")
             button_5.config(bg="#FFD580")
             button_6.config(bg="#FFD580")
-            print("x win")
+
+            messagebox.showinfo("Congratulations!", "Player 1 wins!")
+
+            ResetBomb()
+            
         elif x_123x1 == 3:
             button_1.config(bg="#FFD580")
             button_4.config(bg="#FFD580")
             button_7.config(bg="#FFD580")
-            print("x win")
+
+            messagebox.showinfo("Congratulations!", "Player 1 wins!")
+
+            ResetBomb()
 
 
     elif r%2 == 1:
@@ -429,19 +495,26 @@ def button_4_c():
         o_2x123 = o_2x123 + _2x1
         o_123x1 = o_123x1 + _2x1
 
+        r = r + 1
+
         if o_2x123 == 3:
             button_4.config(bg="#90EE90")
             button_5.config(bg="#90EE90")
             button_6.config(bg="#90EE90")
-            print("o win")
+
+            messagebox.showinfo("Congratulations!", "Player 2 wins!")
+
+            ResetBomb()
+            
         elif o_123x1 == 3:
             button_1.config(bg="#90EE90")
             button_4.config(bg="#90EE90")
             button_7.config(bg="#90EE90")
-            print("o win")
 
+            messagebox.showinfo("Congratulations!", "Player 2 wins!")
+
+            ResetBomb()
             
-    r = r + 1
 
 '''
     _2x123 = _2x123 + _2x1
@@ -486,27 +559,44 @@ def button_5_c():
         x_pri_diagonal = x_pri_diagonal + _2x2
         x_sec_diagonal = x_sec_diagonal + _2x2
 
+        r = r + 1
+
 
         if x_2x123 == 3:
             button_4.config(bg="#FFD580")
             button_5.config(bg="#FFD580")
             button_6.config(bg="#FFD580")
-            print("x win")
+
+            messagebox.showinfo("Congratulations!", "Player 1 wins!")
+
+            ResetBomb()
+            
         elif x_123x2 == 3:
             button_2.config(bg="#FFD580")
             button_5.config(bg="#FFD580")
             button_8.config(bg="#FFD580")
-            print("x win")
+
+            messagebox.showinfo("Congratulations!", "Player 1 wins!")
+
+            ResetBomb()
+            
         elif x_pri_diagonal == 3:
             button_1.config(bg="#FFD580")
             button_5.config(bg="#FFD580")
             button_9.config(bg="#FFD580")
-            print("x win")
+
+            messagebox.showinfo("Congratulations!", "Player 1 wins!")
+
+            ResetBomb()
+            
         elif x_sec_diagonal == 3:
             button_3.config(bg="#FFD580")
             button_5.config(bg="#FFD580")
             button_7.config(bg="#FFD580")
-            print("x win")
+
+            messagebox.showinfo("Congratulations!", "Player 1 wins!")
+
+            ResetBomb()
 
         
     elif r%2 == 1:
@@ -518,30 +608,45 @@ def button_5_c():
         o_pri_diagonal = o_pri_diagonal + _2x2
         o_sec_diagonal = o_sec_diagonal + _2x2
 
+        r = r + 1
+
 
         if o_2x123 == 3:
             button_4.config(bg="#90EE90")
             button_5.config(bg="#90EE90")
             button_6.config(bg="#90EE90")
-            print("o win")
+
+            messagebox.showinfo("Congratulations!", "Player 2 wins!")
+
+            ResetBomb()
+            
         elif o_123x2 == 3:
             button_2.config(bg="#90EE90")
             button_5.config(bg="#90EE90")
             button_8.config(bg="#90EE90")
-            print("o win")
+
+            messagebox.showinfo("Congratulations!", "Player 2 wins!")
+
+            ResetBomb()
+            
         elif o_pri_diagonal == 3:
             button_1.config(bg="#90EE90")
             button_5.config(bg="#90EE90")
             button_9.config(bg="#90EE90")
-            print("o win")
+
+            messagebox.showinfo("Congratulations!", "Player 2 wins!")
+
+            ResetBomb()
+            
         elif o_sec_diagonal == 3:
             button_3.config(bg="#90EE90")
             button_5.config(bg="#90EE90")
             button_7.config(bg="#90EE90")
-            print("o win")
 
-        
-    r = r + 1
+            messagebox.showinfo("Congratulations!", "Player 2 wins!")
+
+            ResetBomb()
+
 
 '''
     _2x123 = _2x123 + _2x2
@@ -586,20 +691,29 @@ def button_6_c():
     if r%2 == 0:
         button_6.config(text="X")
         button_6.config(state=tk.DISABLED)
-
+        
         x_2x123 = x_2x123 + _2x3
         x_123x3 = x_123x3 + _2x3
+
+        r = r + 1
 
         if x_2x123 == 3:
             button_4.config(bg="#FFD580")
             button_5.config(bg="#FFD580")
             button_6.config(bg="#FFD580")
-            print("x win")
+
+            messagebox.showinfo("Congratulations!", "Player 1 wins!")
+
+            ResetBomb()
+            
         elif x_123x3 == 3:
             button_3.config(bg="#FFD580")
             button_6.config(bg="#FFD580")
             button_9.config(bg="#FFD580")
-            print("x win")
+
+            messagebox.showinfo("Congratulations!", "Player 1 wins!")
+
+            ResetBomb()
             
     elif r%2 == 1:
         button_6.config(text="O")
@@ -608,19 +722,27 @@ def button_6_c():
         o_2x123 = o_2x123 + _2x3
         o_123x3 = o_123x3 + _2x3
 
+        r = r + 1
+
         if o_2x123 == 3:
             button_4.config(bg="#90EE90")
             button_5.config(bg="#90EE90")
             button_6.config(bg="#90EE90")
-            print("o win")
+
+            messagebox.showinfo("Congratulations!", "Player 2 wins!")
+
+            ResetBomb()
+            
         elif o_123x3 == 3:
             button_3.config(bg="#90EE90")
             button_6.config(bg="#90EE90")
             button_9.config(bg="#90EE90")
-            print("o win")
 
-            
-    r = r + 1
+            messagebox.showinfo("Congratulations!", "Player 2 wins!")
+
+            ResetBomb()
+
+
 
 '''
     _2x123 = _2x123 + _2x3
@@ -663,22 +785,35 @@ def button_7_c():
         x_3x123 = x_3x123 + _3x1
         x_123x1 = x_123x1 + _3x1
         x_sec_diagonal = x_sec_diagonal + _3x1
+
+        r = r + 1
             
         if x_3x123 == 3:
             button_7.config(bg="#FFD580")
             button_8.config(bg="#FFD580")
             button_9.config(bg="#FFD580")
-            print("x win")
+
+            messagebox.showinfo("Congratulations!", "Player 1 wins!")
+
+            ResetBomb()
+            
         elif x_123x1 == 3:
             button_1.config(bg="#FFD580")
             button_4.config(bg="#FFD580")
             button_7.config(bg="#FFD580")
-            print("x win")
+
+            messagebox.showinfo("Congratulations!", "Player 1 wins!")
+
+            ResetBomb()
+            
         elif x_sec_diagonal == 3:
             button_3.config(bg="#FFD580")
             button_5.config(bg="#FFD580")
             button_7.config(bg="#FFD580")
-            print("x win")
+
+            messagebox.showinfo("Congratulations!", "Player 1 wins!")
+
+            ResetBomb()
 
 
     elif r%2 == 1:
@@ -688,25 +823,38 @@ def button_7_c():
         o_3x123 = o_3x123 + _3x1
         o_123x1 = o_123x1 + _3x1
         o_sec_diagonal = o_sec_diagonal + _3x1
+
+        r = r + 1
             
         if o_3x123 == 3:
             button_7.config(bg="#90EE90")
             button_8.config(bg="#90EE90")
             button_9.config(bg="#90EE90")
-            print("o win")
+
+            messagebox.showinfo("Congratulations!", "Player 2 wins!")
+
+            ResetBomb()
+            
         elif o_123x1 == 3:
             button_1.config(bg="#90EE90")
             button_4.config(bg="#90EE90")
             button_7.config(bg="#90EE90")
-            print("o win")
+
+            messagebox.showinfo("Congratulations!", "Player 2 wins!")
+
+            ResetBomb()
+            
         elif o_sec_diagonal == 3:
             button_3.config(bg="#90EE90")
             button_5.config(bg="#90EE90")
             button_7.config(bg="#90EE90")
-            print("o win")
 
+            messagebox.showinfo("Congratulations!", "Player 2 wins!")
+
+            ResetBomb()
             
-    r = r + 1
+
+
 
 '''
     _3x123 = _3x123 + _3x1
@@ -753,16 +901,25 @@ def button_8_c():
         x_3x123 = x_3x123 + _3x2
         x_123x2 = x_123x2 + _3x2
 
+        r = r + 1
+
         if x_3x123 == 3:
             button_7.config(bg="#FFD580")
             button_8.config(bg="#FFD580")
             button_9.config(bg="#FFD580")
-            print("x win")
+
+            messagebox.showinfo("Congratulations!", "Player 1 wins!")
+
+            ResetBomb()
+            
         elif x_123x2 == 3:
             button_2.config(bg="#FFD580")
             button_5.config(bg="#FFD580")
             button_8.config(bg="#FFD580")
-            print("x win")
+
+            messagebox.showinfo("Congratulations!", "Player 1 wins!")
+
+            ResetBomb()
     
         
     elif r%2 == 1:
@@ -772,19 +929,26 @@ def button_8_c():
         o_3x123 = o_3x123 + _3x2
         o_123x2 = o_123x2 + _3x2
 
+        r = r + 1
+
         if o_3x123 == 3:
             button_7.config(bg="#90EE90")
             button_8.config(bg="#90EE90")
             button_9.config(bg="#90EE90")
-            print("o win")
+
+            messagebox.showinfo("Congratulations!", "Player 2 wins!")
+
+            ResetBomb()
+            
         elif o_123x2 == 3:
             button_2.config(bg="#90EE90")
             button_5.config(bg="#90EE90")
             button_8.config(bg="#90EE90")
-            print("o win")
 
-            
-    r = r + 1
+            messagebox.showinfo("Congratulations!", "Player 2 wins!")
+
+            ResetBomb()
+
 
 '''
     _3x123 = _3x123 + _3x2
@@ -828,21 +992,34 @@ def button_9_c():
         x_123x3 = x_123x3 + _3x3
         x_pri_diagonal = x_pri_diagonal + _3x3
 
+        r = r + 1
+
         if x_3x123 == 3:
             button_7.config(bg="#FFD580")
             button_8.config(bg="#FFD580")
             button_9.config(bg="#FFD580")
-            print("x win")
+
+            messagebox.showinfo("Congratulations!", "Player 1 wins!")
+
+            ResetBomb()
+            
         elif x_123x3 == 3:
             button_3.config(bg="#FFD580")
             button_6.config(bg="#FFD580")
             button_9.config(bg="#FFD580")
-            print("x win")
+
+            messagebox.showinfo("Congratulations!", "Player 1 wins!")
+
+            ResetBomb()
+            
         elif x_pri_diagonal == 3:
             button_1.config(bg="#FFD580")
             button_5.config(bg="#FFD580")
             button_9.config(bg="#FFD580")
-            print("x win")
+
+            messagebox.showinfo("Congratulations!", "Player 1 wins!")
+
+            ResetBomb()
 
 
     elif r%2 == 1:
@@ -853,24 +1030,36 @@ def button_9_c():
         o_123x3 = o_123x3 + _3x3
         o_pri_diagonal = o_pri_diagonal + _3x3
 
+        r = r + 1
+
         if o_3x123 == 3:
             button_7.config(bg="#90EE90")
             button_8.config(bg="#90EE90")
             button_9.config(bg="#90EE90")
-            print("o win")
+
+            messagebox.showinfo("Congratulations!", "Player 2 wins!")
+
+            ResetBomb()
+            
         elif o_123x3 == 3:
             button_3.config(bg="#90EE90")
             button_6.config(bg="#90EE90")
             button_9.config(bg="#90EE90")
-            print("o win")
+
+            messagebox.showinfo("Congratulations!", "Player 2 wins!")
+
+            ResetBomb()
+            
         elif o_pri_diagonal == 3:
             button_1.config(bg="#90EE90")
             button_5.config(bg="#90EE90")
             button_9.config(bg="#90EE90")
-            print("o win")
+
+            messagebox.showinfo("Congratulations!", "Player 2 wins!")
+
+            ResetBomb()
 
 
-    r = r + 1
      
 '''    
     _3x123 = _3x123 + _3x3
