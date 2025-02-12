@@ -183,6 +183,13 @@ def button_1_c():
 
             ResetBomb()
 
+        elif r == 9:
+
+            messagebox.showinfo("Game tie", "It is a tie!")
+
+            ResetBomb()
+
+
         
     elif r%2 == 1:
         button_1.config(text="O")
@@ -220,8 +227,7 @@ def button_1_c():
             messagebox.showinfo("Congratulations!", "Player 2 wins!")
 
             ResetBomb()
-        
-    
+
 
 '''
     _1x123 = _1x123 + _1x1
@@ -287,6 +293,13 @@ def button_2_c():
             messagebox.showinfo("Congratulations!", "Player 1 wins!")
 
             ResetBomb()
+
+        elif r == 9:
+
+            messagebox.showinfo("Game tie", "It is a tie!")
+
+            ResetBomb()
+            
             
     elif r%2 == 1:
         button_2.config(text="O")
@@ -314,6 +327,8 @@ def button_2_c():
             messagebox.showinfo("Congratulations!", "Player 2 wins!")
 
             ResetBomb()
+
+    
             
 '''
     _1x123 = _1x123 + _1x2
@@ -385,6 +400,13 @@ def button_3_c():
 
             ResetBomb()
 
+        elif r == 9:
+
+            messagebox.showinfo("Game tie", "It is a tie!")
+
+            ResetBomb()
+            
+
         
     elif r%2 == 1:
         button_3.config(text="O")
@@ -422,6 +444,8 @@ def button_3_c():
             messagebox.showinfo("Congratulations!", "Player 2 wins!")
 
             ResetBomb()
+
+
 
 '''
     _1x123 = _1x123 + _1x3
@@ -487,6 +511,13 @@ def button_4_c():
 
             ResetBomb()
 
+        elif r == 9:
+
+            messagebox.showinfo("Game tie", "It is a tie!")
+
+            ResetBomb()
+            
+
 
     elif r%2 == 1:
         button_4.config(text="O")
@@ -514,7 +545,7 @@ def button_4_c():
             messagebox.showinfo("Congratulations!", "Player 2 wins!")
 
             ResetBomb()
-            
+
 
 '''
     _2x123 = _2x123 + _2x1
@@ -598,6 +629,13 @@ def button_5_c():
 
             ResetBomb()
 
+        elif r == 9:
+
+            messagebox.showinfo("Game tie", "It is a tie!")
+
+            ResetBomb()
+            
+
         
     elif r%2 == 1:
         button_5.config(text="O")
@@ -646,6 +684,7 @@ def button_5_c():
             messagebox.showinfo("Congratulations!", "Player 2 wins!")
 
             ResetBomb()
+
 
 
 '''
@@ -714,6 +753,13 @@ def button_6_c():
             messagebox.showinfo("Congratulations!", "Player 1 wins!")
 
             ResetBomb()
+
+        elif r == 9:
+
+            messagebox.showinfo("Game tie", "It is a tie!")
+
+            ResetBomb()
+            
             
     elif r%2 == 1:
         button_6.config(text="O")
@@ -815,6 +861,13 @@ def button_7_c():
 
             ResetBomb()
 
+        elif r == 9:
+
+            messagebox.showinfo("Game tie", "It is a tie!")
+
+            ResetBomb()
+            
+
 
     elif r%2 == 1:
         button_7.config(text="O")
@@ -852,7 +905,7 @@ def button_7_c():
             messagebox.showinfo("Congratulations!", "Player 2 wins!")
 
             ResetBomb()
-            
+
 
 
 
@@ -920,6 +973,12 @@ def button_8_c():
             messagebox.showinfo("Congratulations!", "Player 1 wins!")
 
             ResetBomb()
+
+        elif r == 9:
+
+            messagebox.showinfo("Game tie", "It is a tie!")
+
+            ResetBomb()
     
         
     elif r%2 == 1:
@@ -948,6 +1007,7 @@ def button_8_c():
             messagebox.showinfo("Congratulations!", "Player 2 wins!")
 
             ResetBomb()
+
 
 
 '''
@@ -1021,6 +1081,12 @@ def button_9_c():
 
             ResetBomb()
 
+        elif r == 9:
+
+            messagebox.showinfo("Game tie", "It is a tie!")
+
+            ResetBomb()
+
 
     elif r%2 == 1:
         button_9.config(text="O")
@@ -1058,6 +1124,7 @@ def button_9_c():
             messagebox.showinfo("Congratulations!", "Player 2 wins!")
 
             ResetBomb()
+
 
 
      
