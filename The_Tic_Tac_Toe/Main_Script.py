@@ -10,7 +10,7 @@ from tkinter import messagebox
 #r value decides each turn and checks if the game is tie
 r = 0
 
-#stting up tk parameters               
+#setting up tk parameters               
 root = tk.Tk()
 root.title("Tic Tac Toe")
 root.geometry("450x500")
@@ -158,17 +158,22 @@ def button_1_c():
     global x_pri_diagonal
     global x_sec_diagonal
     
-    
+    #Decides each turn for the player
     if r%2 == 0:
         button_1.config(text="X")
         button_1.config(state=tk.DISABLED)
         
+
+        #Collecting data for winning 
         x_1x123 = x_1x123 + _1x1
         x_123x1 = x_123x1 + _1x1
         x_pri_diagonal = x_pri_diagonal + _1x1
 
+        #Switch the player turn
         r = r + 1
 
+        
+        #Checking winning possibilities
         if x_1x123 == 3:
             button_1.config(bg="#FFD580")
             button_2.config(bg="#FFD580")
