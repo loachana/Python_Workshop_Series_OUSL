@@ -1,11 +1,16 @@
 #2/2/2025
+#This is the second project of the python workshop series conducted by OUSL
+#This source code is fully open source
+#All rights reserved
 
 #Importing Libraries
 import tkinter as tk
 from tkinter import messagebox
 
+#r value decides each turn and checks if the game is tie
 r = 0
-                
+
+#stting up tk parameters               
 root = tk.Tk()
 root.title("Tic Tac Toe")
 root.geometry("450x500")
@@ -13,9 +18,12 @@ root.geometry("450x500")
 #Lock resizing
 root.resizable(False, False)
 
+#The title
 label = tk.Label(root, text="TIC TAC TOE", font=("Arial", 20))
 label.pack(pady=10)
 
+
+#Button identifiers 
 _1x1 = 1
 _1x2 = 1
 _1x3 = 1
@@ -26,6 +34,8 @@ _3x1 = 1
 _3x2 = 1
 _3x3 = 1
 
+
+#Player 2 identifiers
 o_1x123 = 0
 o_2x123 = 0
 o_3x123 = 0
@@ -36,6 +46,7 @@ o_pri_diagonal = 0
 o_sec_diagonal = 0
 
 
+#Player 1 identifiers
 x_1x123 = 0
 x_2x123 = 0
 x_3x123 = 0
@@ -67,6 +78,7 @@ global x_sec_diagonal
 
 '''
 
+#Resetting function 
 def ResetBomb():
     global r
     
@@ -89,7 +101,7 @@ def ResetBomb():
     global x_sec_diagonal
 
 
-    
+    #Button cleaners
     button_1.config(bg="#f0f0f0", state=tk.NORMAL, text="")
     button_2.config(bg="#f0f0f0", state=tk.NORMAL, text="")
     button_3.config(bg="#f0f0f0", state=tk.NORMAL, text="")
@@ -101,6 +113,7 @@ def ResetBomb():
     button_8.config(bg="#f0f0f0", state=tk.NORMAL, text="")
     button_9.config(bg="#f0f0f0", state=tk.NORMAL, text="")
 
+    #Resetting parameters
     o_1x123 = 0
     o_2x123 = 0
     o_3x123 = 0
@@ -121,7 +134,8 @@ def ResetBomb():
 
     r = 0
 
-    
+
+#Button 1 function  
 def button_1_c():
     global r
     global _1x1
@@ -243,7 +257,7 @@ def button_1_c():
         print("win")
 '''
 
-
+#Button 2 function 
 def button_2_c():
     global r
     global _1x2
@@ -340,7 +354,7 @@ def button_2_c():
         print("win")
 '''
 
-
+#Button 3 function 
 def button_3_c():
     global r
     global _1x3
@@ -460,7 +474,7 @@ def button_3_c():
         print("win")
 '''
     
-
+#Button 4 function 
 def button_4_c():
     global r
     global _2x1
@@ -558,6 +572,7 @@ def button_4_c():
 
 '''    
 
+#Button 5 function 
 def button_5_c():
     global r
     global _2x2
@@ -705,6 +720,7 @@ def button_5_c():
  '''
 
 
+#Button 6 function 
 def button_6_c():
     global r
     global _2x3
@@ -801,6 +817,7 @@ def button_6_c():
 '''
 
 
+#Button 7 function 
 def button_7_c():
     global r
     global _3x1
@@ -922,7 +939,7 @@ def button_7_c():
         print("win")
 '''
 
-
+#Button 8 function 
 def button_8_c():
     global r
     global _3x2
@@ -1020,7 +1037,7 @@ def button_8_c():
         print("win")
 '''
 
-
+#Button 9 function 
 def button_9_c():
     global r
     global _3x3
@@ -1142,9 +1159,10 @@ def button_9_c():
 
 '''
 
+#Defining squares for grid
 pixel = tk.PhotoImage(width=1, height=1)
 
-
+#Defining buttons
 button_1 = tk.Button(root, image=pixel, compound="c", height=150, width=150, command= button_1_c, font=("Arial", 50))
 button_1.place(x=0, y=50)
 
